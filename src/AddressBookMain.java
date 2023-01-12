@@ -67,42 +67,19 @@ class AddressBook {
         this.pincode = pincode;
     }
 
-
-    void displayAddressbook() {
-
-        System.out.println("First Name: " + firstName);
-        System.out.println("Last Name: " + lastName);
-        System.out.println("Phone Number :" + phoneNumber);
-        System.out.println("Address: " + address);
-        System.out.println("City: " + city);
-        System.out.println("State: " + state);
-        System.out.println("Pincode" + pincode);
+    @Override
+    public String toString() {
+        return "AddressBook{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", phoneNumber=" + phoneNumber +
+                ", address='" + address + '\'' +
+                ", city='" + city + '\'' +
+                ", state='" + state + '\'' +
+                ", pincode=" + pincode +
+                '}';
     }
 
-    void addcontact() {
-        Scanner sc2 = new Scanner(System.in);
-        int num;
-        System.out.println("Enter the number of contacts you want to add: ");
-        num = sc2.nextInt();
-
-        for(int i=0;i<num;i++) {
-            Scanner sc = new Scanner(System.in);
-            System.out.println("Enter your First Name ");
-            this.firstName = sc.next();
-            System.out.println("Enter your Last Name ");
-            this.lastName = sc.next();
-            System.out.println("Enter your Phone Number: ");
-            this.phoneNumber = sc.nextLong();
-            System.out.println("Enter your address: ");
-            this.address = sc.next();
-            System.out.println("Enter your City: ");
-            this.city = sc.next();
-            System.out.println("Enter your State: ");
-            this.state = sc.next();
-            System.out.println("Enter your PINCODE: ");
-            this.pincode = sc.nextInt();
-        }
-    }
 
 
 }
@@ -114,45 +91,8 @@ public class AddressBookMain {
 
 
         System.out.println("===== WELCOME TO ADDRESS BOOK MANAGEMENT =======");
-        AddressBook p1 = new AddressBook();
-        AddressBook[] obj1 = new AddressBook[10];
-
-
-       obj1[0] = p1;
-        p1.setFirstName("Sam");
-        p1.setLastName("Varghese");
-        p1.setPhoneNumber(7568487077l);
-        p1.setAddress("Madhuban Housingboard");
-        p1.setCity("Jodhpur");
-        p1.setState("Rajasthan");
-        p1.setPincode(342005);
-        p1.displayAddressbook();
-        p1.addcontact();
-        p1.displayAddressbook();
-      /*  char input = 'X';
-        System.out.println("Enter X if you wish to add contacts :");
-        input = sc1.next().charAt(0);
-
-        while (input == 'X') {
-            p1.addcontact();
-            p1.displayAddressbook();
-            System.out.println("Enter X if you wish to add contacts :");
-            input = sc1.next().charAt(0);
-        }
-
-       */
-
-
-
-
+        Methods display1 = new Methods();
+        display1.addcontact();
+        display1.print();
     }
-
-
-
-
 }
-
-
-
-
-

@@ -42,13 +42,6 @@
   }
 }</component>
   <component name="RunManager" selected="Application.AddressBookMain">
-    <configuration name="AddressBookMain (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AddressBookMain" />
-      <module name="Address_Book_All_Cases" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="AddressBookMain (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AddressBookMain" />
       <module name="Address_Book_All_Cases" />
@@ -70,6 +63,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AddressBookMain (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AddressBookMain" />
+      <module name="Address_Book_All_Cases" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AddressBookMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AddressBookMain" />
       <module name="Address_Book_All_Cases" />
@@ -80,10 +80,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.AddressBookMain" />
+        <item itemvalue="Application.AddressBookMain (5)" />
         <item itemvalue="Application.AddressBookMain (4)" />
         <item itemvalue="Application.AddressBookMain (3)" />
         <item itemvalue="Application.AddressBookMain (2)" />
-        <item itemvalue="Application.AddressBookMain (1)" />
       </list>
     </recent_temporary>
   </component>
