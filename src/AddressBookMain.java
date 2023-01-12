@@ -79,9 +79,6 @@ class AddressBook {
                 ", pincode=" + pincode +
                 '}';
     }
-
-
-
 }
 
 public class AddressBookMain {
@@ -94,35 +91,6 @@ public class AddressBookMain {
         Methods display1 = new Methods();
         display1.addcontact();
         display1.print();
-
-
-
-
-
-      /*  char input = 'X';
-        System.out.println("Enter X if you wish to add contacts :");
-        input = sc1.next().charAt(0);
-
-        while (input == 'X') {
-            p1.addcontact();
-            p1.displayAddressbook();
-            System.out.println("Enter X if you wish to add contacts :");
-            input = sc1.next().charAt(0);
-        }
-
-       */
-
-
-
-
+        display1.editContact();
     }
-
-
-
-
 }
-
-
-
-
-

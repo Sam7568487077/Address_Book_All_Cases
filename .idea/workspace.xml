@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="eb5c68a5-95fc-467b-91aa-570f50d4cb2d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/src/AddressBookMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddressBookMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Methods.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,8 +80,12 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.AddressBookMain (2)" />
-        <item itemvalue="Application.AddressBookMain (1)" />
         <item itemvalue="Application.AddressBookMain" />
+        <item itemvalue="Application.AddressBookMain (1)" />
+<<<<<<< HEAD
+        <item itemvalue="Application.AddressBookMain" />
+=======
+>>>>>>> UC3EditContact
         <item itemvalue="Application.AddressBookMain (5)" />
         <item itemvalue="Application.AddressBookMain (4)" />
       </list>
