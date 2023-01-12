@@ -78,9 +78,36 @@ class AddressBook {
         System.out.println("State: " + state);
         System.out.println("Pincode" + pincode);
     }
+
+    void addcontact() {
+        Scanner sc2 = new Scanner(System.in);
+        int num;
+        System.out.println("Enter the number of contacts you want to add: ");
+        num = sc2.nextInt();
+
+        for(int i=0;i<num;i++) {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Enter your First Name ");
+            this.firstName = sc.next();
+            System.out.println("Enter your Last Name ");
+            this.lastName = sc.next();
+            System.out.println("Enter your Phone Number: ");
+            this.phoneNumber = sc.nextLong();
+            System.out.println("Enter your address: ");
+            this.address = sc.next();
+            System.out.println("Enter your City: ");
+            this.city = sc.next();
+            System.out.println("Enter your State: ");
+            this.state = sc.next();
+            System.out.println("Enter your PINCODE: ");
+            this.pincode = sc.nextInt();
+        }
+    }
+
+
 }
 
-    public class AddressBookMain {
+public class AddressBookMain {
 
     public static void main(String[] args) {
         Scanner sc1 = new Scanner(System.in);
@@ -88,10 +115,10 @@ class AddressBook {
 
         System.out.println("===== WELCOME TO ADDRESS BOOK MANAGEMENT =======");
         AddressBook p1 = new AddressBook();
-        AddressBook[] obj1 = new AddressBook[1];
+        AddressBook[] obj1 = new AddressBook[10];
 
 
-        obj1[0] = new AddressBook();
+       obj1[0] = p1;
         p1.setFirstName("Sam");
         p1.setLastName("Varghese");
         p1.setPhoneNumber(7568487077l);
@@ -100,13 +127,32 @@ class AddressBook {
         p1.setState("Rajasthan");
         p1.setPincode(342005);
         p1.displayAddressbook();
+        p1.addcontact();
+        p1.displayAddressbook();
+      /*  char input = 'X';
+        System.out.println("Enter X if you wish to add contacts :");
+        input = sc1.next().charAt(0);
 
-
-
-
+        while (input == 'X') {
+            p1.addcontact();
+            p1.displayAddressbook();
+            System.out.println("Enter X if you wish to add contacts :");
+            input = sc1.next().charAt(0);
         }
 
+       */
+
+
+
+
     }
+
+
+
+
+}
+
+
 
 
 
