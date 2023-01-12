@@ -94,5 +94,8 @@ public class AddressBookMain {
         Methods display1 = new Methods();
         display1.addcontact();
         display1.print();
+        display1.editContact();
+        display1.print();
+
     }
 }
