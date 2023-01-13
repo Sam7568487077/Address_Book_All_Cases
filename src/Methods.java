@@ -4,16 +4,16 @@ public class Methods {
 
 
     AddressBook[] ad1 = new AddressBook[100];
-    AddressBook p1 = new AddressBook();
-    Scanner sc = new Scanner(System.in);
 
 
     void addcontact() {
 
         int num;
+        Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number of contacts you want to add: ");
         num = sc.nextInt();
         for (int i = 0; i < num; i++) {
+            AddressBook p1 = new AddressBook();
             System.out.println("Enter your First Name ");
             String fname = sc.next();
             p1.setFirstName(fname);
@@ -35,36 +35,46 @@ public class Methods {
             System.out.println("Enter your PINCODE: ");
             int pin = sc.nextInt();
             p1.setPincode(pin);
+            System.out.println("\n");
             ad1[i] = p1;
         }
+    }
 
-
+    public void print() {
+        for (int j = 0; j < ad1.length; j++) {
+            if (ad1[j] == null)
+                continue;
+            System.out.println(ad1[j]);
         }
-
-        public void  print() {
-
-            for (int j = 0; j < ad1.length; j++) {
-                if (ad1[j] == null)
-                    break;
-                System.out.println(ad1[j]);
-
-        }
-
     }
 
 
-         void editContact() {
+    void editContact() {
+        Scanner sc = new Scanner(System.in);
+        AddressBook p1 = null;
 
-            System.out.println("Do you want to make changes in any contact (Press 'Y' to continue:) ");
-            char decision = sc.next().charAt(0);
-            if(decision == 'Y')
-            {
-                System.out.println("Enter the first name of the person whose data you want to edit");
-                String nameOfPerson = sc.next();
-                p1.setFirstName(nameOfPerson);
-
-                if(nameOfPerson.equals(p1.getFirstName()))
-                {
+        System.out.println("Do you want to make changes in any contact (Press 'Y' to continue:) ");
+        char decision = sc.next().charAt(0);
+        if (decision == 'Y') {
+            System.out.println("Enter the first name of the person whose data you want to edit");
+            String nameOfPerson = sc.next();
+            for (int i = 0; i < ad1.length; i++) {
+                AddressBook person = ad1[i];
+                if(person == null) {
+                    break;
+                }
+                if (person.getFirstName().equals(nameOfPerson)) {
+                    p1 = ad1[i];
+                    break;
+                }
+            }
+            if (p1 == null) {
+                System.out.println("Person not found");
+            }
+            else {
+                System.out.println("Select A : for editing and B: for deleting:");
+                char choice = sc.next().charAt(0);
+                if (choice == 'A') {
                     System.out.println("Enter the index number for editing 1 : last name 2:phone number 3:adddress 4:city 5:state 6:pincode");
                     int option = sc.nextInt();
                     switch (option) {
@@ -100,24 +110,31 @@ public class Methods {
                             break;
 
                     }
+                }
+                else if (choice == 'B') {
+                    p1.setFirstName(null);
+                    p1.setLastName(null);
+                    p1.setPhoneNumber(0);
+                    p1.setAddress(null);
+                    p1.setPincode(0);
+                    p1.setState(null);
+                    p1.setCity(null);
 
                 }
                 else {
-                    System.out.println("No relevant name found");
+                    System.out.println("Not a relevant choice");
                 }
-
             }
-            else {
-                System.out.println("No");
-            }
-   }
-
-
-
-
-
+        } else {
+            System.out.println("=============== Thank you for using the service ==========");
+        }
     }
-    }
+}
+
+
+
+
+
 
 
 

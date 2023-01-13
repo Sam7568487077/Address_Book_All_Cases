@@ -92,5 +92,6 @@ public class AddressBookMain {
         display1.addcontact();
         display1.print();
         display1.editContact();
+        display1.print();
     }
 }
