@@ -1,4 +1,3 @@
-import java.util.Scanner;
 import java.lang.String;
 
 class AddressBook {
@@ -79,14 +78,13 @@ class AddressBook {
                 ", pincode=" + pincode +
                 '}';
     }
+
+
 }
 
 public class AddressBookMain {
 
     public static void main(String[] args) {
-        Scanner sc1 = new Scanner(System.in);
-
-
         System.out.println("===== WELCOME TO ADDRESS BOOK MANAGEMENT =======");
         Methods display1 = new Methods();
         display1.addcontact();
@@ -95,3 +93,4 @@ public class AddressBookMain {
         display1.print();
     }
 }
+

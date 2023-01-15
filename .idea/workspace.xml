@@ -37,12 +37,12 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Codes/Day_7_Problems_Answers1/Day_7_Problems_AnswersJ&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Codes/Stock_Account_Management/Stock_Account_Management&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.reader.mode&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.AddressBookMain (1)">
+  <component name="RunManager" selected="Application.AddressBookMain">
     <configuration name="AddressBookMain (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AddressBookMain" />
       <module name="Address_Book_All_Cases" />
@@ -71,7 +71,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddressBookMain (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="AddressBookMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AddressBookMain" />
       <module name="Address_Book_All_Cases" />
       <method v="2">
@@ -80,11 +80,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AddressBookMain" />
+        <item itemvalue="Application.AddressBookMain (4)" />
         <item itemvalue="Application.AddressBookMain (1)" />
         <item itemvalue="Application.AddressBookMain (3)" />
         <item itemvalue="Application.AddressBookMain (2)" />
-        <item itemvalue="Application.AddressBookMain (5)" />
-        <item itemvalue="Application.AddressBookMain (4)" />
       </list>
     </recent_temporary>
   </component>
